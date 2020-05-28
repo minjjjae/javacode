@@ -12,6 +12,19 @@ public class IfTest {
 			System.out.println(com);
 			int player = scan.nextInt();
 
+			String input = scan.nextLine();
+			System.out.println(input);  
+			char tmp;
+			boolean output = true;
+
+			for(int i = 0 ; i<input.length(); i++)  {
+				tmp=input.charAt(i);
+
+				if(!('0' <=tmp && tmp <='9' )) {
+					output = false;
+				}
+			}
+			System.out.println("숫자여부 : " +output );
 			if(player>=1 && player <=6)  {
 				if(com==player)  {
 					System.out.println( "정답");

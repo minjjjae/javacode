@@ -10,7 +10,8 @@ public class IfTest2 {
 
 			int com = (int) (Math.random()*6+1);
 			System.out.println(com);
-			string player = scan.next();
+		
+		string player = scan.next();
 
 			if(player>=1 && player <=6)  {
 				if(com==player)  {
